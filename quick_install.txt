@@ -1,0 +1,39 @@
+Resolve the virtual environment path mismatch:
+
+    Deactivate Any Active Virtual Environment
+
+deactivate
+
+    Navigate to Your Project Directory
+
+cd "/Volumes/T9/Desktop Core/deepseek-engineer"
+
+    Create a New Virtual Environment
+
+python3 -m venv .venv
+
+    Activate the Virtual Environment
+
+source .venv/bin/activate
+
+    Install Dependencies
+
+pip install -r requirements.txt
+
+    Run Your Application
+
+uv run main.py
+
+    Notes:
+
+    Ensure that you're using the correct Python version compatible with your project.
+    If you continue to encounter issues with the uv command, verify that it's installed and properly configured in your virtual environment.
+   
+  pip install uv 
+   
+    If uv refers to a specific tool or script, make sure it's correctly referenced in your project setup.
+    By following these steps, you should be able to set up and activate the appropriate virtual environment for your project without path conflicts.
+
+    .env
+   
+DEEPSEEK_API_KEY=sk-9dcf30352e8241e2921bb5070344c7f3
